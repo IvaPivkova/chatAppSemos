@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs
+	/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Iva Chat App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="mobile">
+        
+          <div class="top">
+            <div>
+              Endava 
+              <i class="fas fa-wifi"></i>  
+            </div>
+            <div >
+                <script> document.write(new Date().toLocaleDateString()); 
+                </script>
+            </div>
+            <div >
+              100%
+              <i class="fas fa-battery-full"></i>
+            </div>
+          </div>
+          <div class="app-name">
+            <div>
+                <i class="fas fa-chevron-left back-icon"></i>
+            </div>
+            <div class="user-name">
+                    <input id="username" class="username-input" type="text" />
+                    <span id="username-selected"></span>
+                    <button id="send_username" class="username-button" type="button">
+                        <i class="far fa-check-circle check"></i>
+                    </button>
+                
+              <br />
+                <div>
+                <div class="location-info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Endava talks, Skopje
+                </div>
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        
+          <div id="chatroom" class="big-screen">
+            <div class="is-typing">
+              <div id="feedback" class="is-fixed">
+                  
+              </div>
+            </div>
+          </div>
+        <div id="input_zone" class="input">
+            <input placeholder="Please enter username first" id="message" class="input-text" type="text" />
+            <button id="send_message" class="input-button" type="button">
+                <i class="fab fa-telegram-plane telegram-icon"></i>
+            </button>
+        </div>
+
+      </div>
+    </div>
+
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
+

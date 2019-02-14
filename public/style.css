@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-image: linear-gradient(-90deg,rgb(225,82,72), rgb(229,109,102));
+}
+
+.mobile {
+    position: absolute;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 80%;
+    width: 400px;
+}
+
+.top {
+    height: 3%;
+    background: rgb(46, 47, 52);
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px;
+}
+
+.back-icon {
+    padding-left: 5px;
+    font-size: 28px;
+}
+
+
+.user-name {
+    text-align: center;
+}
+
+.location-info {
+    margin-top: 8px; 
+}
+
+.check {
+    font-size: 25px;
+}
+
+.username-input {
+    height: 25px;
+}
+
+.username-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.username-button:focus {
+    outline: 0;
+}
+
+.app-name {
+    height: 12%;
+    background: rgb(46, 47, 52);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.big-screen {
+    height: 75%;
+    background: #DFDFD7;
+    overflow: scroll;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.message-color {
+    margin: 0px;
+    width: 60%;
+    min-height: 40px;
+    font-size: 2vh;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1vh;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    align-self: flex-start;
+    background-image: linear-gradient(-90deg,rgb(247,92,76), rgb(218,43,115));
+}
+
+.message-white {
+    margin: 0px;
+    width: 60%;
+    min-height: 40px;
+    font-size: 2vh;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1vh;
+    border-radius: 10px;
+    margin: 10px;
+    align-self: flex-end;
+    background-color: white;
+} 
+
+.input {
+    height: 10%;
+    background: white;
+    display: flex;
+}
+
+.input-text {
+    width: 80%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    color: grey;
+}
+
+
+.telegram-icon {
+    font-size: 30px;
+}
+
+.input-button {
+    border: none;
+    background: transparent;
+    width: 20%;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.is-typing {
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
+
+.is-fixed {
+    position: fixed;
+}
+
+
+@media (pointer:coarse) {
+    /* custom css for "touch targets" */
+    .mobile {
+        width: 80%;
+    }
+}
